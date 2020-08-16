@@ -1,0 +1,145 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block content %}
+
+    <!--================ Start Home Banner Area =================-->
+    <section class="home_banner_area">
+      <div class="banner_inner">
+        <div class="container">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-lg-6">
+              <div class="banner_content">
+                <h3>Hey There !</h3>
+                <h1 class="text-uppercase">I am Diwash </h1>
+                <h5 class="text-uppercase">Software Developer/Full Stack Web Developer</h5>
+                <div class="social_icons my-5">
+                  <a href="https://twitter.com" target="_blank"><i class="ti-twitter"></i></a>
+                
+                  <a href="https://www.facebook.com/diaz.kapil/" target="_blank"><i class="ti-facebook"></i></a>
+                  
+                  <a href="https://www.linkedin.com/in/diwashkapilchettri/" target="_blank"><i class="ti-linkedin"></i></a>
+               
+                </div>
+                <a class="primary_btn" href="https://drive.google.com/drive/folders/1y3ESnVpH4RdIIJD8UK32HZnDLy6WlGRz?usp=sharing"><span>See My Certificates/Documents</span></a>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="home_right_img">
+                <img class="img-fluid" src="{% static 'img/banner/diwas.png' %}" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--================ End Home Banner Area =================-->
+
+  
+    <!--================ Start Statistics Area =================-->
+    
+    <!--================ End Statistics Area =================-->
+
+    <!--================ Start About Us Area =================-->
+    <section class="about_area section_gap">
+      <div class="container">
+        <div class="row justify-content-start align-items-center">
+          <div class="col-lg-5">
+            <div class="about_img">
+              <img class="" src="{% static 'img/about-diwash.png' %}" alt="">
+            </div>
+          </div>
+
+          <div class="offset-lg-1 col-lg-5">
+            <div class="main_title text-left">
+              <p class="top_text">About me <span></span></p>
+              <h2>
+                Software Developer/Fullstack Developer
+              </h2>
+              <p>
+               I am a Computer Science Engineer.Did my graduation from Sikkim Manipal Institute Of Technology.
+               I started my career as a Web Developer and later moved on to web app development using Django,
+               I also have worked in the fields of Machine Learning and automation.I have worked in database management using 
+               MySql,Postgresql and Sqlite.
+              </p>
+              <a class="primary_btn" href="{% static 'diwash-cv.pdf' %}"><span>Download CV</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--================ End About Us Area =================-->
+
+    <!--================ Start Features Area =================-->
+    <section class="services_area">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="main_title">
+              <p class="top_text">My Previous Worked Fields <span></span></p>
+              <h2>This are the fields/technologies that I have worked on.<br>
+                 </h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+            <div class="service_item">
+              <img src="{% static 'img/services/s1.png' %}" alt="">
+              <h4>Web Development</h4>
+              <p>Worked On website projects for Tours and Travel companies as a freelance project.Also when working as an
+                intern I was the project lead for developing a django webapp where I worked on various aspects of the webapp 
+                which included a dedicated ifsc code generator for the state of Sikkim 
+                </p>
+           
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+            <div class="service_item">
+              <img src="{% static 'img/services/s2.png' %}" alt="">
+              <h4>Database management and Automation</h4>
+              <p>I worked with Mysql and debugged the php code and wrote a more efficient code in python with DRY principle
+                .I worked out to automate the type of datas to be automatically be inserted into their respective table in database
+                after parsing out through the live api and during development through the json data
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+            <div class="service_item">
+              <img src="{% static 'img/services/s3.png' %}" alt="">
+              <h4>Machine Learning</h4>
+              <p>I used machine learning to create clusters of words from email and after figuring out the patterns
+                I feeded it as an input and used pretrained glove datased words to find out the intersection of words.
+              To achieve the goal of routing the emails  to appropriate departments.</p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--================ End Features Area =================-->
+
+
+    <!--================ Start Testimonial Area =================-->
+    <section class="testimonial_area">
+      <div class="container">
+        <video name='webapp' controls autoplay width='80%' height='40%'>
+          <source src="{% static 'webapp.mp4' %}" type="video/mp4"></source>
+          </video>
+      
+      </div>
+    </section>
+    <!--================ End Testimonial Area =================-->
+
+
+
+
+    <!--================ Start Portfolio Area =================-->
+    
+    <!--================ Start Blog Area =================-->
+    
+
+    
+{% endblock %}
